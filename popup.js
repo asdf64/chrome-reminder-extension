@@ -5,7 +5,7 @@ chrome.alarms.onAlarm.addListener( function (alarm) {
   var notification = chrome.notifications.create(
     'take-a-break-notification', {
       type: 'basic',
-      iconUrl: 'icon.png', // Replace with your own image
+      iconUrl: 'notif-icon.png', // Replace with your own image
 
       // Customize either the notification title or message
       title: 'Take a break!',
@@ -13,6 +13,6 @@ chrome.alarms.onAlarm.addListener( function (alarm) {
     },
 
     function () {}
-    
+
   );
 });
