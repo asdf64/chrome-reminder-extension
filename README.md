@@ -23,10 +23,10 @@ See https://developer.chrome.com/extensions/getstarted if you are having any tro
 
 ## Customization
 
-If you want to change the notification message, icon, and/or time interval, simply open up *popup.js*
-and modify the **message**, **iconUrl**, **periodInMinutes** properties.
+If you want to change the notification message, icon, and/or time interval, simply open up **popup.js**
+and modify the *message*, *iconUrl*, *periodInMinutes* properties.
 
-Here is *popup.js* for reference:
+Here is **popup.js** for reference:
 
 ```javascript
 // Change the periodInMinutes property to set time interval
@@ -36,7 +36,7 @@ chrome.alarms.onAlarm.addListener( function (alarm) {
   var notification = chrome.notifications.create(
     'take-a-break-notification', {
       type: 'basic',
-      iconUrl: 'icon.png', // Replace with your own image
+      iconUrl: 'notif-icon.png', // Replace with your own image
       
       // Customize either the notification title or message
       title: 'Take a break!',
@@ -44,8 +44,11 @@ chrome.alarms.onAlarm.addListener( function (alarm) {
     },
 
     function () {}
+    
   );
 });
 ```
+You can also change the extension name, description, and icon that shows up in chrome by editing **manifest.json**.
+
 ## Contact
 Have any questions or experiencing any difficulties? Email me at wlin12@terpmail.umd.edu.
