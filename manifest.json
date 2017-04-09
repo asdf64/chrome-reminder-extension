@@ -1,13 +1,19 @@
 {
   "manifest_version": 2,
 
-  "name": "My extension",
-  "description": "This extension provides a periodic desktop notification with a customizable message, icon, and delay.",
+  "name": "20-20-20 Reminder",
+  "description": "This extension provides a periodic desktop notification according to the 20-20-20 rule
+                  to prevent eye strain and maintain healthy vision.",
   "version": "1.0",
 
   "background": {
     "scripts" : ["popup.js"]
   },
+
+  "browser_action": {
+    "default_icon": "web-icon.png"
+  },
+
   "permissions": [
     "notifications",
     "alarms"
