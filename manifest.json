@@ -1,0 +1,15 @@
+{
+  "manifest_version": 2,
+
+  "name": "My extension",
+  "description": "This extension provides a periodic desktop notification with a customizable message, icon, and delay.",
+  "version": "1.0",
+
+  "background": {
+    "scripts" : ["popup.js"]
+  },
+  "permissions": [
+    "notifications",
+    "alarms"
+  ]
+}
